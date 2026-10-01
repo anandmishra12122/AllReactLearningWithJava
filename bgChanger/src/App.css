@@ -1,0 +1,44 @@
+.maindiv
+{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+.left-menu{
+    position:fixed;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:70px;
+    background:#222;
+    padding:10px 5px;
+    border-radius:0 10px 10px 0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* Buttons */
+.left-menu button{
+    width:55px;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Different Colors */
+.btn1{background:#ff0000;}
+.btn2{background:#00bcd4;}
+.btn3{background:#4caf50;}
+.btn4{background:#ff9800;}
+.btn5{background:#9c27b0;}
+.btn6{background:#2196f3;}
+.btn7{background:#795548;}
+.btn8{background:#e91e63;}
+
+.left-menu button:hover{
+    transform:scale(1.08);
+    transition:.2s;
+}

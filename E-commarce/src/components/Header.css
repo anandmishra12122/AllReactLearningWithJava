@@ -1,0 +1,219 @@
+.container
+{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(38, 178, 38);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+.shopname
+{
+    margin-left: 40px;
+    color: white;
+    font-size: 35px;
+}
+
+.alllink
+{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.alllink a {
+  text-decoration: none;
+  color: white;
+}
+
+.alllink a.active {
+  color: rgb(218, 255, 7);
+  font-weight: bold;
+}
+
+.searchcontainer
+{
+    display: flex;
+    margin-right:60px;
+    gap: 10px;
+}
+
+.searchcontainer input
+{
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.searchcontainer input:focus
+{
+    border-color: #6e6a66;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.5);
+}
+
+.searchcontainer button
+{
+    height: 40px;
+    padding: 0 20px;
+    background-color: #aff706;
+    color: rgb(75, 15, 83);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.searchcontainer button:hover
+{
+    background-color: #36ba41;
+}
+
+.searchcontainer button:active
+{
+    transform: scale(0.97);
+}
+
+/* Tablet */
+@media (max-width: 1024px)
+{
+    .container
+    {
+        height: auto;
+        min-height: 60px;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        gap: 15px;
+    }
+
+    .shopname
+    {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .alllink
+    {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .searchcontainer
+    {
+        margin-right: 20px;
+    }
+
+    .searchcontainer input
+    {
+        width: 160px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px)
+{
+    .container
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 20px;
+    }
+
+    .shopname
+    {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .alllink
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 17px;
+    }
+
+    .searchcontainer
+    {
+        margin-right: 0;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .searchcontainer input
+    {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .searchcontainer button
+    {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px)
+{
+    .alllink
+    {
+        gap: 12px;
+        font-size: 15px;
+    }
+
+    .searchcontainer
+    {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .searchcontainer input,
+    .searchcontainer button
+    {
+        width: 100%;
+    }
+}
+
+.cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+
+    color: white;
+
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

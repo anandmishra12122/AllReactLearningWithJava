@@ -1,0 +1,62 @@
+.maindiv
+{
+    padding: 40px;
+    text-align: start;
+    color: black;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    
+}
+.name
+{
+    font-size: 50px;
+    color: rgb(34, 34, 197);
+    font-family: 'Merriweather', serif;
+}
+
+h2
+{
+    color: black;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+h3
+{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.button
+{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(132, 23, 233);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    font-family: 'Merriweather', serif;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+img
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #38bdf8;
+    margin-left: 850px;
+    margin-top: -350px;
+}
+
+.button:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
